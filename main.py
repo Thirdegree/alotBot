@@ -22,4 +22,8 @@ while Trying:
 with open("alots") as t:
 	alots = json.load(t)
 
-print alots
+def alot_types(body):
+	types = {"care":False, "fire":False, "mist":False, "straw":False,"beer cans":False,
+			"charging":False, "hear":False, "like":False, "dangerous":False}
+	for i in types:
+		if 
