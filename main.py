@@ -37,7 +37,7 @@ def alot_types(body):
 		return ["default"]
 
 def find_alots(body):
-	pattern = "(\w+ ){0,4}alot,*.* (\w+[ ]{0,1}){0,5}"
+	pattern = "(\w+ ){0,4}alot[,.]{0,1}( ){0,1}(\w+[ ]{0,1}){0,5}"
 	t = re.search(pattern, body)
 	if t:
 		return alot_types(t.group())
